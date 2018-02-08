@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slide.css">
+    <script src="./js/slide.js"></script>
+    <style>
+        .animate-box {
+            margin: 20px auto;
+            width: 500px;
+            height: 300px;
+            /* 控制轮播图尺寸的大小 */
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var n = N.slide.getInit({
+                direction:'horizen',  //定制轮播方式  vertical 竖直滑动 horizen水平滑动。
+                timerOut:3000,  //定制滑动轮播时间间隔
+            }); 
+            n.showStyle();
+            n.move();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="animate-box">
+        <div class="animate">
+            <ul>
+                <li><img src="./img/1.jpg" alt="" width="100%" height="250"></li>
+                <li><img src="./img/2.jpg" alt="" width="100%" height="250"></li>
+                <li><img src="./img/3.jpg" alt="" width="100%" height="250"></li>
+                <li><img src="./img/4.jpg" alt="" width="100%" height="250"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

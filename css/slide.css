@@ -1,0 +1,75 @@
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+body a{
+    text-decoration: none;
+}
+body a:hover{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+img{
+    border: none;
+}
+.animate{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.animate font{
+    position: absolute;
+    color:white;
+    font-size: 30px;
+    opacity: 0.7;
+}
+.animate ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.animate ul li img{
+    display: block;
+}
+.animate ul li{
+    float: left;
+}
+.left{
+    left: 8px;
+    top: 38%;
+}
+.right{
+    right: 8px;
+    top: 38%;
+}
+.icon{   /*不定宽度实现居中*/
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.icon a{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.7;
+    margin-left: 6px;
+}
+.icon .on{
+    background: black;
+}
